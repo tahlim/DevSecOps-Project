@@ -136,15 +136,9 @@ Install below plugins
 Goto Manage Jenkins → Tools → Install JDK(17) and NodeJs(16)→ Click on Apply and Save
 
 
-3. **SonarQube:**
-
-Create the token
-
-Goto Jenkins Dashboard → Manage Jenkins → Credentials → Add Secret Text. It should look like this
-
-After adding sonar token
-
-Click on Apply and Save
+3. **Create SonarQube Token:**
+- Goto Jenkins Dashboard → Manage Jenkins → Credentials → Add Secret Text. It should look like this
+- After adding sonar token, Click on Apply and Save
 
 **The Configure System option** is used in Jenkins to configure different server
 
@@ -323,17 +317,15 @@ pipeline{
     }
 }
 
-
 If you get docker login failed errorr
 
 sudo su
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 
-
 ```
 
-**Phase 4: Monitoring**
+# **Phase 4: Monitoring**
 
 1. **Install Prometheus and Grafana:**
 
@@ -648,12 +640,12 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
     - Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
 
 
-**Phase 5: Notification**
+# **Phase 5: Notification:**
 
 1. **Implement Notification Services:**
     - Set up email notifications in Jenkins or other notification mechanisms.
 
-# Phase 6: Kubernetes
+# **Phase 6: Kubernetes:**
 
 ## Create Kubernetes Cluster with Nodegroups
 
