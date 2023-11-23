@@ -23,7 +23,7 @@
 **Step 1: Launch EC2 (Ubuntu 22.04):**
 
 **Step 2: Clone the Code:**
-    - git clone https://github.com/N4si/DevSecOps-Project.git
+- git clone https://github.com/N4si/DevSecOps-Project.git
     
 **Step 3: Install Docker and Run the App Using a Container:**
 - Set up Docker on the EC2 instance:
@@ -94,12 +94,9 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     - Integrate SonarQube with your CI/CD pipeline.
     - Configure SonarQube to analyze code for quality and security issues.
 
-**Phase 3: CI/CD Setup**
+# **Phase 3: CI/CD Setup**
 
-1. **Install Jenkins for Automation:**
-    - Install Jenkins on the EC2 instance to automate deployment:
-    Install Java
-    
+1. **Install Jenkins for Automation:**    
     ```bash
     sudo apt update
     sudo apt install fontconfig openjdk-17-jre
@@ -119,7 +116,6 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     sudo systemctl start jenkins
     sudo systemctl enable jenkins
     ```
-    - Access Jenkins in a web browser using the public IP of your EC2 instance, publicIp:8080
         
 2. **Install Necessary Plugins in Jenkins:**
 
@@ -140,7 +136,7 @@ Install below plugins
 Goto Manage Jenkins → Tools → Install JDK(17) and NodeJs(16)→ Click on Apply and Save
 
 
-### SonarQube
+3. **SonarQube:**
 
 Create the token
 
@@ -158,7 +154,7 @@ We will install a sonar scanner in the tools.
 
 Create a Jenkins webhook
 
-1. **Configure CI/CD Pipeline in Jenkins:**
+**Now Configure CI/CD Pipeline in Jenkins:**
 - Create a CI/CD pipeline in Jenkins to automate your application deployment.
 
 ```groovy
