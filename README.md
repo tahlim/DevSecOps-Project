@@ -21,8 +21,10 @@
 # **Phase 1: Initial Setup and Deployment**
 
 **Step 1: Launch EC2 (Ubuntu 22.04):**
+
 **Step 2: Clone the Code:**
     - git clone https://github.com/N4si/DevSecOps-Project.git
+    
 **Step 3: Install Docker and Run the App Using a Container:**
 - Set up Docker on the EC2 instance:
     
