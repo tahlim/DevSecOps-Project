@@ -18,24 +18,12 @@
 ```
 # Deploy Netflix App on Cloud using Jenkins - DevSecOps Project!
 
-### **Phase 1: Initial Setup and Deployment**
+# **Phase 1: Initial Setup and Deployment**
 
 **Step 1: Launch EC2 (Ubuntu 22.04):**
-
-- Provision an EC2 instance on AWS with Ubuntu 22.04.
-- Connect to the instance using SSH.
-
 **Step 2: Clone the Code:**
-
-- Update all the packages and then clone the code.
-- Clone your application's code repository onto the EC2 instance:
-    
-    ```bash
-    git clone https://github.com/N4si/DevSecOps-Project.git
-    ```
-    
+    - git clone https://github.com/N4si/DevSecOps-Project.git
 **Step 3: Install Docker and Run the App Using a Container:**
-
 - Set up Docker on the EC2 instance:
     
     ```bash
@@ -75,7 +63,7 @@ Now recreate the Docker image with your api key:
 docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
 ```
 
-**Phase 2: Security**
+#  **Phase 2: Security**
 
 1. **Install SonarQube and Trivy:**
     - Install SonarQube and Trivy on the EC2 instance to scan for vulnerabilities.
