@@ -1,4 +1,22 @@
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
+```
+### Create EC2 Instance and install Jenkins on this machine.
+        Note: Install Necessary Plugins in Jenkins
+### Install Sonarqube and Trivy.
+        Note: Sonarqube docker se install krna hai to pahle docker install krna hoga.
+### Integrate SonarQube and Configure
+### Configure CI/CD Pipeline in Jenkins
+### Install Prometheus and Grafana on EC2
+### Implement Notification Services
+### Create Kubernetes Cluster with Nodegroups
+### Monitor Kubernetes with Prometheus
+### Install Node Exporter using Helm
+### Deploy Application with ArgoCD
+        1. **Install ArgoCD:**
+        2. **Set Your GitHub Repository as a Source:**
+        3. **Create an ArgoCD Application:**
+        4. **Access your Application**
+```
+# Deploy Netflix App on Cloud using Jenkins - DevSecOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
 
@@ -16,7 +34,6 @@
     git clone https://github.com/N4si/DevSecOps-Project.git
     ```
     
-
 **Step 3: Install Docker and Run the App Using a Container:**
 
 - Set up Docker on the EC2 instance:
@@ -67,11 +84,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         ```
         docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
         ```
-        
-        
-        To access: 
-        
-        publicIP:9000 (by default username & password is admin)
+        To access:  publicIP:9000 (by default username is admin & password is admin)
         
         To install Trivy:
         ```
@@ -86,7 +99,6 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         ```
         trivy image <imageid>
         ```
-        
         
 2. **Integrate SonarQube and Configure:**
     - Integrate SonarQube with your CI/CD pipeline.
@@ -117,10 +129,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     sudo systemctl start jenkins
     sudo systemctl enable jenkins
     ```
-    
-    - Access Jenkins in a web browser using the public IP of your EC2 instance.
-        
-        publicIp:8080
+    - Access Jenkins in a web browser using the public IP of your EC2 instance, publicIp:8080
         
 2. **Install Necessary Plugins in Jenkins:**
 
